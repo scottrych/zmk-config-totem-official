@@ -62,11 +62,11 @@
                 <&kp G &kp I &kp F>;
         };
 
-        YUM: YUM {
+        YUP: YUP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COLON &kp Y &kp U &kp P>;
-            label = "YUM";
+            label = "YUP";
         };
     };
 
