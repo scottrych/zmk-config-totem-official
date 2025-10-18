@@ -25,7 +25,7 @@
 &mt {
     quick-tap-ms = <200>;
     global-quick-tap;
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     tapping-term-ms = <200>;
     require-prior-idle-ms = <100>;
 };
@@ -44,30 +44,9 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 4>;
-        };
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
         YUP: YUP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -82,6 +61,17 @@
             label = "CAPS_WORD";
             #binding-cells = <0>;
             continue-list = <CAPSLOCK>;
+        };
+
+        holdtap: holdtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <10 11 12 13 16 17 18 19>;
         };
     };
 
@@ -107,10 +97,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q               &kp W       &kp L                         &kp D        &kp P           &kp K   &kp M        &kp U                &kp Y       &kp SEMI
-            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_COMMAND R            &mt LSHFT T  &kp G           &kp F   &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RIGHT_CONTROL O
-&caps_word  &kp BACKSLASH       &kp Z       &kp X                         &kp C        &kp V           &kp J   &kp B        &kp H                &kp COMMA   &kp PERIOD           &kp SINGLE_QUOTE
-                                            &kp LS(LA(LG(LEFT_CONTROL)))  &lt 1 TAB    &lt 2 RETURN    &trans  &lt 3 SPACE  &lt 4 BACKSPACE
+            &kp Q               &kp W       &kp L                         &kp D        &kp P           &kp K      &kp M        &kp U                &kp Y       &kp SEMI
+            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_COMMAND R            &mt LSHFT T  &kp G           &kp F      &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RIGHT_CONTROL O
+&caps_word  &kp BACKSLASH       &kp Z       &kp X                         &kp C        &kp V           &kp J      &kp B        &kp H                &kp COMMA   &kp PERIOD           &kp SINGLE_QUOTE
+                                            &kp LS(LA(LG(LEFT_CONTROL)))  &lt 1 TAB    &lt 2 RETURN    &kp SPACE  &lt 3 SPACE  &lt 4 BACKSPACE
             >;
         };
 
