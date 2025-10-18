@@ -30,11 +30,6 @@
     require-prior-idle-ms = <100>;
 };
 
-&lt {
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <100>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
