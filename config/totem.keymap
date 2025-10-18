@@ -23,10 +23,16 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <100>;
+};
+
+&lt {
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <100>;
 };
 
 / {
@@ -76,17 +82,6 @@
             label = "CAPS_WORD";
             #binding-cells = <0>;
             continue-list = <CAPSLOCK>;
-        };
-
-        hold_tap: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <10 11 12 13 16 17 18 19>;
-            hold-while-undecided;
-            tapping-term-ms = <120>;
         };
     };
 
