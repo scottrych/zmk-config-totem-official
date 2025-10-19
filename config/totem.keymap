@@ -157,10 +157,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                              &kt NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp N5      &kp NUMBER_6       &kp N7     &kp N8         &kp N9  &kp N0
-                              &trans        &trans        &trans          &trans           &kp LBKT    &kp RIGHT_BRACKET  &kp EQUAL  &kp ASTERISK   &trans  &trans
-&kp LA(LG(LS(LEFT_CONTROL)))  &trans        &trans        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LPAR    &kp RPAR           &kp MINUS  &kp KP_DIVIDE  &trans  &kp SLASH  &kp RC(LA(LS(RIGHT_CONTROL)))
-                                                          &trans          &trans           &trans      &trans             &trans     &kp GLOBE
+                              &mt EXCLAMATION KP_NUMBER_1  &mt AT_SIGN KP_NUMBER_2  &mt HASH KP_NUMBER_3  &mt DOLLAR KP_NUMBER_4  &mt PERCENT KP_NUMBER_5    &mt CARET KP_NUMBER_6  &mt AMPERSAND KP_NUMBER_7  &mt ASTERISK KP_NUMBER_8  &mt LEFT_PARENTHESIS KP_NUMBER_9  &mt RIGHT_PARENTHESIS KP_NUMBER_0
+                              &trans                       &trans                   &trans                &trans                  &kp LBKT                   &kp RIGHT_BRACKET      &kp EQUAL                  &kp ASTERISK              &trans                            &trans
+&kp LA(LG(LS(LEFT_CONTROL)))  &trans                       &trans                   &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp LPAR                   &kp RPAR               &kp MINUS                  &kp KP_DIVIDE             &trans                            &kp SLASH                          &kp RC(LA(LS(RIGHT_CONTROL)))
+                                                                                    &trans                &trans                  &trans                     &trans                 &trans                     &kp GLOBE
             >;
         };
 
