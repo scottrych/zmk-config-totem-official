@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -42,7 +41,7 @@
 
         Layer5 {
             bindings = <&none>;
-            key-positions = <37 36>;
+            key-positions = <37 32>;
             layers = <4>;
         };
     };
@@ -248,10 +247,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &bt BT_PRV   &bt BT_NXT  &trans  &trans  &out OUT_TOG    &bt BT_CLR  &trans  &none  &none  &bt BT_CLR_ALL
-        &trans       &trans      &trans  &trans  &trans          &none       &trans  &none  &none  &none
-&trans  &bootloader  &trans      &trans  &trans  &trans          &none       &none   &none  &none  &sys_reset      &none
-                                 &trans  &trans  &trans          &none       &none   &none
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &trans  &none  &none  &bt BT_CLR_ALL
+        &trans        &trans        &trans        &trans        &trans          &none       &trans  &none  &none  &none
+&trans  &bootloader   &trans        &trans        &trans        &trans          &none       &none   &none  &none  &sys_reset      &none
+                                    &trans        &trans        &trans          &none       &none   &none
             >;
         };
     };
