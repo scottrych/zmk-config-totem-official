@@ -47,7 +47,7 @@
 
         Layer5 {
             bindings = <&none>;
-            key-positions = <35 36>;
+            key-positions = <36 37>;
             layers = <4>;
         };
     };
@@ -148,10 +148,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q               &kp W       &kp L               &kp D        &kp P                           &kp K      &kp M        &kp U                &kp Y       &kp SEMI
-            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_COMMAND R  &mt LSHFT T  &kp G                           &kp F      &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RIGHT_CONTROL O
-&caps_word  &kp BACKSLASH       &kp Z       &kp X               &kp C        &kp V                           &kp J      &kp B        &kp H                &kp COMMA   &kp PERIOD           &kp SINGLE_QUOTE
-                                            &lt 1 TAB           &lt 2 RET    &kp LG(LA(LS(LEFT_CONTROL)))    &kp SPACE  &lt 3 SPACE  &lt 4 BACKSPACE
+            &kp Q               &kp W       &kp L                         &kp D        &kp P      &kp K      &kp M        &kp U                &kp Y       &kp SEMI
+            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_COMMAND R            &mt LSHFT T  &kp G      &kp F      &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RIGHT_CONTROL O
+&caps_word  &kp BACKSLASH       &kp Z       &kp X                         &kp C        &kp V      &kp J      &kp B        &kp H                &kp COMMA   &kp PERIOD           &kp SINGLE_QUOTE
+                                            &kp LA(LG(LS(LEFT_CONTROL)))  &lt 2 TAB    &kp RET    &kp SPACE  &lt 3 SPACE  &lt 4 BACKSPACE
             >;
         };
 
