@@ -92,10 +92,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q               &kp W       &kp L               &kp D         &kp P           &kp K      &kp M        &kp U                &kp Y       &kp SEMI
-            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_COMMAND R  &mt LSHFT T   &kp G           &kp F      &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RIGHT_CONTROL O
-&caps_word  &kp BACKSLASH       &kp Z       &kp X               &kp C         &kp V           &kp J      &kp B        &kp H                &kp COMMA   &kp PERIOD           &kp SINGLE_QUOTE
-                                            &lt 1 TAB           &lt 2 RETURN  &lt 2 RETURN    &kp SPACE  &lt 3 SPACE  &lt 4 BACKSPACE
+            &kp Q               &kp W       &kp L               &kp D         &kp P                           &kp K      &kp M        &kp U                &kp Y       &kp SEMI
+            &mt LEFT_CONTROL A  &mt LALT S  &mt LEFT_COMMAND R  &mt LSHFT T   &kp G                           &kp F      &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I  &mt RIGHT_CONTROL O
+&caps_word  &kp BACKSLASH       &kp Z       &kp X               &kp C         &kp V                           &kp J      &kp B        &kp H                &kp COMMA   &kp PERIOD           &kp SINGLE_QUOTE
+                                            &lt 1 TAB           &lt 2 RETURN  &kp LG(LA(LS(LEFT_CONTROL)))    &kp SPACE  &lt 3 SPACE  &lt 4 BACKSPACE
             >;
         };
 
@@ -147,7 +147,7 @@
         &kp F1                &kp F2                &kp F3            &kp F4                 &kp F5    &kp F6              &kp F7              &kp F8          &kp F9               &kp F10
         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp RS(RA(RC(RG(F))))  &trans    &kp RG(LEFT_ARROW)  &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)
 &trans  &kp C_VOL_DN          &kp K_MUTE            &kp C_VOLUME_UP   &trans                 &trans    &trans              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp BSLH             &trans
-                                                    &trans            &gif                   &trans    &trans              &trans              &trans
+                                                    &trans            &trans                 &trans    &trans              &trans              &trans
             >;
         };
 
@@ -197,7 +197,7 @@
 
             bindings = <
         &bt BT_PRV   &bt BT_NXT  &trans  &trans  &out OUT_TOG    &bt BT_CLR  &trans  &none  &none  &bt BT_CLR_ALL
-        &trans       &trans      &trans  &trans  &trans          &none       &none   &none  &none  &none
+        &trans       &trans      &trans  &trans  &trans          &none       &trans  &none  &none  &none
 &trans  &bootloader  &trans      &trans  &trans  &trans          &none       &none   &none  &none  &sys_reset      &none
                                  &trans  &trans  &trans          &none       &none   &none
             >;
