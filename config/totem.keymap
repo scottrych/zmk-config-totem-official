@@ -298,10 +298,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                              &TapExclamation1  &TapAt2  &TapPound3      &TapDollar4      &TapPercent5    &TapCaret6         &TapAmp7                 &TapStar8      &TapParenL9  &TapParenR0
-                              &trans            &trans   &trans          &trans           &kp LBKT        &kp RIGHT_BRACKET  &kp EQUAL                &kp ASTERISK   &trans       &trans
-&kp LA(LG(LS(LEFT_CONTROL)))  &trans            &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LPAR        &kp RPAR           &mt UNDERSCORE KP_MINUS  &kp KP_DIVIDE  &trans       &mt QUESTION SLASH  &kp RC(LA(LS(RIGHT_CONTROL)))
-                                                         &trans          &trans           &trans          &trans             &trans                   &kp GLOBE
+                              &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &mt CARET NUMBER_6  &mt AMPERSAND N7         &mt STAR N8    &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0
+                              &trans                    &trans           &trans             &trans               &kp LBKT          &kp RIGHT_BRACKET   &kp EQUAL                &kp ASTERISK   &trans                   &trans
+&kp LA(LG(LS(LEFT_CONTROL)))  &trans                    &trans           &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LPAR          &kp RPAR            &mt UNDERSCORE KP_MINUS  &kp KP_DIVIDE  &trans                   &mt QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
+                                                                         &trans             &trans               &trans            &trans              &trans                   &kp GLOBE
             >;
         };
 
