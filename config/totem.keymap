@@ -346,9 +346,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans             &trans  &dtim          &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &YUP    &trans
-        &trans  &kp LG(LA(LS(S)))  &lsal   &lsltr         &kp LS(LA(LC(LG(C))))    &trans             &trans         &trans  &trans  &trans
-&trans  &trans  &trans             &trans  &kp LS(LG(C))  &kp LA(LG(V))            &trans             &kp LC(LG(C))  &ddus   &trans  &trans  &kp LA(LG(LS(K)))
+        &trans  &trans             &trans  &dtim          &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &YUP                  &trans
+        &trans  &kp LG(LA(LS(S)))  &lsal   &lsltr         &kp LS(LA(LC(LG(C))))    &trans             &trans         &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
+&trans  &trans  &trans             &trans  &kp LS(LG(C))  &kp LA(LG(V))            &trans             &kp LC(LG(C))  &ddus   &trans                &trans                 &kp LA(LG(LS(K)))
                                    &trans  &trans         &trans                   &trans             &trans         &trans
             >;
         };
