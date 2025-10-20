@@ -48,7 +48,7 @@
         Layer5 {
             bindings = <&none>;
             key-positions = <36 37>;
-            layers = <5>;
+            layers = <4>;
         };
     };
 
@@ -353,15 +353,6 @@
             >;
         };
 
-        layer_4 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
         system {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -383,6 +374,15 @@
               &out OUT_USB  &trans        &trans        &trans        &trans          &trans         &trans         &none          &none          &none
 &out OUT_BLE  &bootloader   &trans        &trans        &trans        &trans          &bt BT_CLR     &none          &none          &none          &sys_reset     &bt BT_CLR_ALL
                                           &trans        &trans        &trans          &none          &none          &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
