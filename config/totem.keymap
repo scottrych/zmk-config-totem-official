@@ -274,7 +274,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q                &kp W        &kp L                         &kp D              &kp P           &kp K      &kp M              &kp U                 &kp Y        &kp SEMI
+            &mt TILDE Q          &kp W        &kp L                         &kp D              &kp P           &kp K      &kp M              &kp U                 &kp Y        &kp SEMI
             &HML LEFT_CONTROL A  &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G           &kp F      &HMShiftR RSHFT N  &HMR RIGHT_COMMAND E  &HMR RALT I  &HMR RIGHT_CONTROL O
 &caps_word  &Slashes             &kp Z        &kp X                         &kp C              &kp V           &kp J      &kp B              &kp H                 &kp COMMA    &kp PERIOD            &kp SINGLE_QUOTE
                                               &kp LA(LG(LS(LEFT_CONTROL)))  &lt 1 TAB          &lt 2 RETURN    &kp SPACE  &lt 3 SPACE        &lt 4 BACKSPACE
