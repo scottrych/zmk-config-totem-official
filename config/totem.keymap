@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD";
             #binding-cells = <0>;
-            continue-list = <CAPSLOCK>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
         };
 
         longpress: longpress {
@@ -199,7 +199,7 @@
             &kp Q                      &kp W        &kp L                         &kp D              &kp P           &kp K      &kp M              &kp U                 &kp Y            &longpress SEMICOLON COLON
             &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G           &kp F      &HMShiftR RSHFT N  &HMR RIGHT_COMMAND E  &HMR RALT I      &HMR RIGHT_CONTROL O
 &caps_word  &longpress BACKSLASH PIPE  &kp Z        &kp X                         &kp C              &kp V           &kp J      &kp B              &kp H                 &mt UNDER COMMA  &mt KP_SLASH PERIOD         &kp SINGLE_QUOTE
-                                                    &kp LA(LG(LS(LEFT_CONTROL)))  &lt 1 TAB          &lt 2 RETURN    &kp SPACE  &lt 3 SPACE        &lt 4 BACKSPACE
+                                                   &kp LA(LG(LS(LEFT_CONTROL)))  &lt 1 TAB          &lt 2 RETURN    &kp BACKSPACE  &lt 3 SPACE        &lt 4 SPACE
             >;
         };
 
