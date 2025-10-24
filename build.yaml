@@ -4,5 +4,5 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_right
   - board: seeeduino_xiao_ble
-    shield: sofle_dongle
+    shield: totem_dongle
 # there is no settingsreset (needed) for the XIAO

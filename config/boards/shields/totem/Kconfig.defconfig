@@ -11,7 +11,24 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_TOTEM_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "TOTEM Dongle"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
 if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_TOTEM_DONGLE || SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
 
 config ZMK_SPLIT
     default y
