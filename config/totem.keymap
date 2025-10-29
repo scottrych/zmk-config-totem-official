@@ -231,10 +231,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                              &longpress EXCLAMATION NUMBER_1  &longpress AT NUMBER_2      &longpress HASH NUMBER_3  &longpress DOLLAR NUMBER_4  &longpress PERCENT N5    &longpress CARET NUMBER_6  &longpress AMPERSAND N7     &longpress STAR N8  &longpress LEFT_PARENTHESIS N9  &longpress RIGHT_PARENTHESIS N0
-                              &longpress LG(LS(GRAVE)) GRAVE   &longpress LG(TILDE) TILDE  &trans                    &trans                      &kp LBKT                 &kp RIGHT_BRACKET          &kp KP_PLUS                 &kp KP_SUBTRACT     &kp KP_EQUAL                    &trans
-&kp LA(LG(LS(LEFT_CONTROL)))  &kp LS(LG(TAB))                  &kp LG(TAB)                 &kp LEFT_BRACE            &kp RIGHT_BRACE             &kp LPAR                 &kp RPAR                   &mt UNDERSCORE KP_ASTERISK  &kp KP_DIVIDE       &trans                          &longpress QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
-                                                                                           &mt GLOBE GLOBE           &trans                      &trans                   &trans                     &trans                      &kp DELETE
+                              &longpress EXCLAMATION NUMBER_1  &longpress AT NUMBER_2  &longpress HASH NUMBER_3  &longpress DOLLAR NUMBER_4  &longpress PERCENT N5    &longpress CARET NUMBER_6  &longpress AMPERSAND N7     &longpress STAR N8  &longpress LEFT_PARENTHESIS N9  &longpress RIGHT_PARENTHESIS N0
+                              &mt LG(LS(GRAVE)) GRAVE          &mt LG(TILDE) TILDE     &trans                    &trans                      &kp LBKT                 &kp RIGHT_BRACKET          &kp KP_PLUS                 &kp KP_SUBTRACT     &kp KP_EQUAL                    &trans
+&kp LA(LG(LS(LEFT_CONTROL)))  &kp LS(LG(TAB))                  &kp LG(TAB)             &kp LEFT_BRACE            &kp RIGHT_BRACE             &kp LPAR                 &kp RPAR                   &mt UNDERSCORE KP_ASTERISK  &kp KP_DIVIDE       &trans                          &longpress QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
+                                                                                       &mt GLOBE GLOBE           &trans                      &trans                   &trans                     &trans                      &kp DELETE
             >;
         };
 
