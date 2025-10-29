@@ -177,6 +177,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_REPEAT";
             bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
@@ -206,10 +207,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q                      &kp W        &kp L                         &kp D              &kp P           &kp K          &kp M              &kp U                 &kp Y                   &longpress SEMICOLON COLON
-            &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G           &kp F          &HMShiftR RSHFT N  &HMR RIGHT_COMMAND E  &HMR RALT I             &HMR RIGHT_CONTROL O
-&caps_word  &longpress BACKSLASH PIPE  &kp Z        &kp X                         &kp C              &kp V           &kp J          &kp B              &kp H                 &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
-                                                   &kp LA(LG(LS(LEFT_CONTROL)))  &lt 1 TAB          &lt 2 RETURN    &kp BACKSPACE  &lt_repeat 3 SPACE        &lt_repeat 4 BACKSPACE
+            &kp Q                      &kp W        &kp L                         &kp D              &kp P           &kp K          &kp M               &kp U                   &kp Y                   &longpress SEMICOLON COLON
+            &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G           &kp F          &HMShiftR RSHFT N   &HMR RIGHT_COMMAND E    &HMR RALT I             &HMR RIGHT_CONTROL O
+&caps_word  &longpress BACKSLASH PIPE  &kp Z        &kp X                         &kp C              &kp V           &kp J          &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
+                                                    &kp LA(LG(LS(LEFT_CONTROL)))  &lt 1 TAB          &lt 2 RETURN    &kp BACKSPACE  &lt_repeat 3 SPACE  &lt_repeat 4 BACKSPACE
             >;
         };
 
@@ -230,10 +231,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                              &longpress EXCLAMATION NUMBER_1  &longpress AT NUMBER_2  &longpress HASH NUMBER_3  &longpress DOLLAR NUMBER_4  &longpress PERCENT N5    &longpress CARET NUMBER_6  &longpress AMPERSAND N7     &longpress STAR N8      &longpress LEFT_PARENTHESIS N9  &longpress RIGHT_PARENTHESIS N0
-                              &TapTickTilde                    &trans                  &trans                    &trans                      &kp LBKT                 &kp RIGHT_BRACKET          &kp KP_PLUS                 &kp KP_SUBTRACT         &kp KP_EQUAL                    &trans
-&kp LA(LG(LS(LEFT_CONTROL)))  &trans                           &trans                  &kp LEFT_BRACE            &kp RIGHT_BRACE             &kp LPAR                 &kp RPAR                   &mt UNDERSCORE KP_ASTERISK  &kp KP_DIVIDE           &trans                          &longpress QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
-                                                                                       &trans                    &trans                      &trans                   &trans                     &trans                      &longpress GLOBE GLOBE
+                              &longpress EXCLAMATION NUMBER_1  &longpress AT NUMBER_2  &longpress HASH NUMBER_3  &longpress DOLLAR NUMBER_4  &longpress PERCENT N5    &longpress CARET NUMBER_6  &longpress AMPERSAND N7     &longpress STAR N8  &longpress LEFT_PARENTHESIS N9  &longpress RIGHT_PARENTHESIS N0
+                              &mt GRAVE TILDE                  &trans                  &trans                    &trans                      &kp LBKT                 &kp RIGHT_BRACKET          &kp KP_PLUS                 &kp KP_SUBTRACT     &kp KP_EQUAL                    &trans
+&kp LA(LG(LS(LEFT_CONTROL)))  &trans                           &trans                  &kp LEFT_BRACE            &kp RIGHT_BRACE             &kp LPAR                 &kp RPAR                   &mt UNDERSCORE KP_ASTERISK  &kp KP_DIVIDE       &trans                          &longpress QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
+                                                                                       &mt GLOBE GLOBE           &trans                      &trans                   &trans                     &trans                      &kp DELETE
             >;
         };
 
