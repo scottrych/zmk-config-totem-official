@@ -38,7 +38,7 @@
         };
 
         Layer5 {
-            bindings = <&none>;
+            bindings = <&sl 5>;
             key-positions = <36 37>;
         };
     };
@@ -207,10 +207,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q                      &kp W        &kp L                         &kp D              &kp P           &kp K          &kp M               &kp U                   &kp Y                   &longpress SEMICOLON COLON
-            &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G           &kp F          &HMShiftR RSHFT N   &HMR RIGHT_COMMAND E    &HMR RALT I             &HMR RIGHT_CONTROL O
-&caps_word  &longpress BACKSLASH PIPE  &kp Z        &kp X                         &kp C              &kp V           &kp J          &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
-                                                    &kp LA(LG(LS(LEFT_CONTROL)))  &lt 1 TAB          &lt 2 RETURN    &kp BACKSPACE  &lt_repeat 3 SPACE  &lt_repeat 4 BACKSPACE
+            &kp Q                      &kp W        &kp L                         &kp D              &kp P                  &kp K          &kp M               &kp U                   &kp Y                   &longpress SEMICOLON COLON
+            &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G                  &kp F          &HMShiftR RSHFT N   &HMR RIGHT_COMMAND E    &HMR RALT I             &HMR RIGHT_CONTROL O
+&caps_word  &longpress BACKSLASH PIPE  &kp Z        &kp X                         &kp C              &kp V                  &kp J          &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
+                                                    &kp LA(LG(LS(LEFT_CONTROL)))  &lt_repeat 1 TAB   &lt_repeat 2 RETURN    &kp BACKSPACE  &lt_repeat 3 SPACE  &lt_repeat 4 BACKSPACE
             >;
         };
 
@@ -262,10 +262,10 @@
             >;
         };
 
-        shortcut {
+        te {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SHRT";
+            label = "TE";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -279,11 +279,22 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LG(LS(GRAVE))  &kp LG(GRAVE)      &trans  &dtim          &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &YUP                  &trans
-        &trans             &kp LG(LA(LS(S)))  &lsal   &lsltr         &kp LS(LA(LC(LG(C))))    &trans             &trans         &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
-&trans  &kp LG(LS(TAB))    &kp LG(TAB)        &trans  &kp LS(LG(C))  &kp LA(LG(V))            &trans             &kp LC(LG(C))  &ddus   &trans                &trans                 &kp LA(LG(LS(K)))
-                                              &trans  &trans         &trans                   &trans             &trans         &trans
+        &trans  &trans  &lsal   &dtim   &trans    &trans  &trans  &trans  &YUP    &trans
+        &apup   &trans  &lsal   &lsltr  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ddus   &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        shortcuts {
+            bindings = <
+        &kp RG(RS(APOS))  &kp RG(GRAVE)      &trans  &trans         &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &trans        &trans
+        &trans            &kp RG(RA(RS(S)))  &trans  &trans         &kp RS(RA(RC(RG(C))))    &trans             &trans         &trans  &kp LG(LBKT)  &kp RG(RBKT)
+&trans  &kp RG(RS(TAB))   &kp RG(TAB)        &trans  &kp RS(RG(C))  &kp RA(RG(V))            &trans             &kp LC(LG(C))  &trans  &trans        &trans        &kp LA(LG(LS(K)))
+                                             &trans  &trans         &trans                   &trans             &trans         &trans
+            >;
+
+            label = "SHORTCUTS";
         };
 
         system {
