@@ -227,15 +227,15 @@
             bindings = <
             &kp Q                      &kp W        &kp L                         &kp D              &kp P                  &kp K          &kp M               &kp U                   &kp Y                   &longpress SEMICOLON COLON
             &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G                  &kp F          &HMShiftR RSHFT N   &HMR RIGHT_COMMAND E    &HMR RALT I             &HMR RIGHT_CONTROL O
-&caps_word  &longpress BACKSLASH PIPE  &kp Z        &kp X                         &kp C              &kp V                  &kp J          &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
+&caps_word  &longpress BACKSLASH PIPE  &mt RG(Z) Z  &mt RG(X) X                   &mt RG(C) C        &mt RG(V) V            &kp J          &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
                                                     &kp LA(LG(LS(LEFT_CONTROL)))  &lt_repeat 1 TAB   &lt_repeat 2 RETURN    &kp BACKSPACE  &lt_repeat 3 SPACE  &lt_repeat 4 BACKSPACE
             >;
         };
 
-        num_layer {
+        sym_num {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NUM";
+            label = "SYM_NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -250,8 +250,8 @@
 
             bindings = <
                               &longpress EXCLAMATION NUMBER_1  &longpress AT NUMBER_2  &longpress HASH NUMBER_3  &longpress DOLLAR NUMBER_4  &longpress PERCENT N5    &longpress CARET NUMBER_6  &longpress AMPERSAND N7     &longpress STAR N8  &longpress LEFT_PARENTHESIS N9  &longpress RIGHT_PARENTHESIS N0
-                              &mt LG(LS(GRAVE)) GRAVE          &mt LG(TILDE) TILDE     &trans                    &trans                      &kp LBKT                 &kp RIGHT_BRACKET          &kp KP_PLUS                 &kp KP_SUBTRACT     &kp KP_EQUAL                    &trans
-&kp LA(LG(LS(LEFT_CONTROL)))  &kp LS(LG(TAB))                  &kp LG(TAB)             &kp LEFT_BRACE            &kp RIGHT_BRACE             &kp LPAR                 &kp RPAR                   &mt UNDERSCORE KP_ASTERISK  &kp KP_DIVIDE       &trans                          &longpress QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
+                              &trans                           &trans                  &trans                    &trans                      &kp LBKT                 &kp RIGHT_BRACKET          &kp KP_PLUS                 &kp KP_SUBTRACT     &kp KP_EQUAL                    &trans
+&kp LA(LG(LS(LEFT_CONTROL)))  &trans                           &trans                  &kp LEFT_BRACE            &kp RIGHT_BRACE             &kp LPAR                 &kp RPAR                   &mt UNDERSCORE KP_ASTERISK  &kp KP_DIVIDE       &trans                          &longpress QUESTION SLASH        &kp RC(LA(LS(RIGHT_CONTROL)))
                                                                                        &mt GLOBE GLOBE           &trans                      &trans                   &trans                     &trans                      &kp DELETE
             >;
         };
@@ -273,10 +273,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F1                &kp F2                &kp F3            &kp F4                 &kp F5    &kp F6              &kp F7              &kp F8          &kp F9               &kp F10
-        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp RS(RA(RC(RG(F))))  &trans    &kp RG(LEFT_ARROW)  &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)
-&trans  &kp C_VOL_DN          &kp K_MUTE            &kp C_VOLUME_UP   &trans                 &trans    &trans              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp BSLH             &trans
-                                                    &trans            &trans                 &trans    &trans              &trans              &trans
+        &kp F1                &kp F2                &kp F3           &kp F4                 &kp F5              &kp F6              &kp F7              &kp F8          &kp F9               &kp F10
+        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans           &kp RS(RA(RC(RG(F))))  &kp RC(UP_ARROW)    &kp RG(LEFT_ARROW)  &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)
+&trans  &kp C_VOL_DN          &kp K_MUTE            &kp C_VOLUME_UP  &trans                 &trans              &trans              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp BSLH             &trans
+                                                    &trans           &trans                 &trans              &trans              &trans              &trans
             >;
         };
 
@@ -306,19 +306,19 @@
 
         shortcuts {
             bindings = <
-        &kp RS(RG(NON_US_BACKSLASH))  &kp RG(NON_US_BACKSLASH)  &trans  &trans         &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &trans        &trans
-        &trans                        &kp RG(RA(RS(S)))         &trans  &trans         &kp RS(RA(RC(RG(C))))    &trans             &trans         &trans  &kp LG(LBKT)  &kp RG(RBKT)
-&trans  &kp RS(RG(TAB))               &kp RG(TAB)               &trans  &kp RS(RG(C))  &kp RA(RG(V))            &trans             &kp LC(LG(C))  &trans  &trans        &trans        &kp LA(LG(LS(K)))
-                                                                &trans  &trans         &trans                   &trans             &trans         &trans
+        &kp RG(RS(NON_US_BACKSLASH))  &kp RG(NON_US_BACKSLASH)  &trans  &kp RG(RS(NUMBER_4))  &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &trans        &trans
+        &trans                        &kp RG(RA(RS(S)))         &trans  &trans                &kp RS(RA(RC(RG(C))))    &trans             &trans         &trans  &kp LG(LBKT)  &kp RG(RBKT)
+&trans  &kp RS(RG(TAB))               &kp RG(TAB)               &trans  &kp RS(RG(C))         &kp RA(RG(V))            &trans             &kp LC(LG(C))  &trans  &trans        &trans        &kp LA(LG(LS(K)))
+                                                                &trans  &trans                &trans                   &trans             &trans         &trans
             >;
 
             label = "SHORTCUTS";
         };
 
-        system {
+        board {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYS";
+            label = "BOARD";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
