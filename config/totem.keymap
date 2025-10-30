@@ -86,14 +86,6 @@
             label = "LSAL";
         };
 
-        prevapp: prevapp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_COMMAND &kp RS(TAB)>;
-            label = "PREVAPP";
-            tap-ms = <250>;
-        };
-
         nextapp: nextapp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
