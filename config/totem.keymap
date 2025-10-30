@@ -85,6 +85,34 @@
             bindings = <&kp COLON &kp L &kp S>;
             label = "LSAL";
         };
+
+        prevwindow: prevwindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp RS(GRAVE)>;
+            label = "PREVWINDOW";
+        };
+
+        nextwindow: nextwindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp GRAVE>;
+            label = "NEXTWINDOW";
+        };
+
+        prevapp: prevapp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp RS(TAB)>;
+            label = "PREVAPP";
+        };
+
+        nextapp: nextapp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp TAB>;
+            label = "NEXTAPP";
+        };
     };
 
     behaviors {
@@ -288,10 +316,10 @@
 
         shortcuts {
             bindings = <
-        &kp RG(RS(APOS))  &kp RG(GRAVE)      &trans  &trans         &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &trans        &trans
-        &trans            &kp RG(RA(RS(S)))  &trans  &trans         &kp RS(RA(RC(RG(C))))    &trans             &trans         &trans  &kp LG(LBKT)  &kp RG(RBKT)
-&trans  &kp RG(RS(TAB))   &kp RG(TAB)        &trans  &kp RS(RG(C))  &kp RA(RG(V))            &trans             &kp LC(LG(C))  &trans  &trans        &trans        &kp LA(LG(LS(K)))
-                                             &trans  &trans         &trans                   &trans             &trans         &trans
+        &prevwindow  &nextwindow        &trans  &trans         &trans                   &kp LA(LC(LG(K)))  &trans         &trans  &trans        &trans
+        &trans       &kp RG(RA(RS(S)))  &trans  &trans         &kp RS(RA(RC(RG(C))))    &trans             &trans         &trans  &kp LG(LBKT)  &kp RG(RBKT)
+&trans  &prevapp     &nextapp           &trans  &kp RS(RG(C))  &kp RA(RG(V))            &trans             &kp LC(LG(C))  &trans  &trans        &trans        &kp LA(LG(LS(K)))
+                                        &trans  &trans         &trans                   &trans             &trans         &trans
             >;
 
             label = "SHORTCUTS";
