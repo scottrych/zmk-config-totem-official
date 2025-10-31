@@ -225,10 +225,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q                      &kp W        &kp L                         &kp D              &kp P                  &kp K          &kp M               &kp U                   &kp Y                   &longpress SEMICOLON COLON
-            &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G                  &kp F          &HMShiftR RSHFT N   &HMR RIGHT_COMMAND E    &HMR RALT I             &HMR RIGHT_CONTROL O
-&caps_word  &longpress BACKSLASH PIPE  &mt RG(Z) Z  &mt RG(X) X                   &mt RG(C) C        &mt RG(V) V            &kp J          &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
-                                                    &kp LA(LG(LS(LEFT_CONTROL)))  &lt_repeat 1 TAB   &lt_repeat 2 RETURN    &kp BACKSPACE  &lt_repeat 3 SPACE  &lt_repeat 4 BACKSPACE
+            &kp Q                      &kp W        &kp L                         &kp D              &kp P                  &kp K               &kp M               &kp U                   &kp Y                   &longpress SEMICOLON COLON
+            &HML LEFT_CONTROL A        &HML LALT S  &HML LEFT_COMMAND R           &HMShiftL LSHFT T  &kp G                  &kp F               &HMShiftR RSHFT N   &HMR RIGHT_COMMAND E    &HMR RALT I             &HMR RIGHT_CONTROL O
+&caps_word  &longpress BACKSLASH PIPE  &mt RG(Z) Z  &mt RG(X) X                   &mt RG(C) C        &mt RG(V) V            &kp J               &kp B               &kp H                   &longpress UNDER COMMA  &longpress KP_SLASH PERIOD  &longpress DOUBLE_QUOTES SQT
+                                                    &kp LA(LG(LS(LEFT_CONTROL)))  &lt_repeat 1 TAB   &lt_repeat 2 RETURN    &lt_repeat 3 SPACE  &lt_repeat 3 SPACE  &lt_repeat 4 BACKSPACE
             >;
         };
 
